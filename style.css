@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@media only screen and (max-device-width: 900px) {
+    *{ max-width:600px; }
+    }
+body{
+    height: 100vh;
+    background-image: linear-gradient(90deg,#042940,#005C53);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.bar{
+    background-color: #D6D58E;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+.nome{
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 100px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+}
+.area{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.ithalo{
+    border-radius: 50%;
+}
+.ith{
+    font-size: 2em;
+}
+.contato{
+    background-color: #DBF227;
+    width: 100px;
+    height: 50px;
+    color: black;
+    border-radius: 3px;
+}
+button:hover{
+    transition: all 1s;
+    margin-left: 20px;
+}
+.nome{
+    margin: 0px;
+    padding: 0px;
+}
