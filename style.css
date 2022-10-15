@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-@media only screen and (max-device-width: 900px) {
-    *{ max-width:600px; }
+
+    :root{
+        --cor1: #2C3333;
+        --cor2: #395B64;
+        --cor3: #a5c9ca;
+        --cor4: #e7f6f2;
     }
 body{
     height: 100vh;
-    background-image: linear-gradient(90deg,#042940,#005C53);
+    background-image: linear-gradient(90deg,var(--cor1),var(--cor2));
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: var(--cor4);
 }
 .bar{
-    background-color: #D6D58E;
+    background-color: var(--cor3);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+    padding: 10px;
+    
 }
 .nome{
-    color: #fff;
     font-size: 1.5em;
     text-align: center;
     font-weight: bold;
@@ -29,33 +34,54 @@ button{
     margin-top: 5px;
     background-color: transparent;
     border: none;
-    color: #fff;
     font-size: 1em;
+    color: var(--cor4);
 }
 .area{
     margin-top: 10px;
     align-items: center;
     text-align: center;
     font-weight: bold;
+    color: var(--cor4);
 }
 .ithalo{
     border-radius: 50%;
 }
 .ith{
     font-size: 2em;
+    filter: drop-shadow(8px 8px 4px rgba(0,0,0,0.6));
 }
 .contato{
-    background-color: #DBF227;
+    background-color: var(--cor1);
     width: 100px;
     height: 50px;
-    color: black;
+    color: var(--cor4);
     border-radius: 3px;
 }
-button:hover{
-    transition: all 1s;
-    margin-left: 20px;
-}
+
 .nome{
     margin: 0px;
     padding: 0px;
 }
+.projeto_btn:hover{
+transition: all 1s;
+margin-left: 10px;
+}
+.sobre_btn:hover{
+    transition: all 1s;
+    margin-right: 10px;
+}
+.contato:hover{
+    transition: all .5s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+@media only screen and (max-width: 320px) {
+    .ithalo {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 471px) {
+    .ith{
+        font-size: 1.5em;
+    }
+  }
